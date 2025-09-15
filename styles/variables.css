@@ -13,20 +13,6 @@
   --rec: inline-block;
 }
 
-:root.theme-dark {
-  --page-bg-image: url(../images/cover-image-dark.png);
-  --page-bg-color: #000028;
-  --accent-color: #FF0070;
-  --undertitle-color: #000028;
-  --text-color: #F1B2CE;
-  --a-shadow-color: #F1B2CE;
-  --a-text-color: #F1B2CE;
-  --header-text-color: #DB00FF;
-  --decorated-zone-color: #FF0070;
-  --header-meny-hover-color: rgba(255, 0, 112, 0.4);
-  
-}
-
 
 
 
