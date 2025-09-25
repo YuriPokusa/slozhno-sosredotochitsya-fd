@@ -8,14 +8,12 @@
   <meta name="color-scheme" content="dark light">
   <title>Сложно сосредоточиться</title>
   <script src="./scripts/script.js"></script>
-  <link rel="fonts" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./styles/globals.css">
-  <link rel="stylesheet" href="./styles/variables.css">
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/dark.css">
+  <link rel="stylesheet" href="./styles/variables.css">
   <link rel="stylesheet" href="./styles/light.css">
-
-  <meta name="color-scheme" content="dark light">
+  <link rel="stylesheet" href="./styles/dark.css">
   <link rel="icon" href="./images/favicon.ico" sizes="any">
   <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
@@ -86,12 +84,10 @@
         </article>
       </div>
     </section>
-    <section class="content-section-section">
-      <h2 class="content__card__title content__card__title-inline">Что снижает</h2>
-      <h2 class="content__card__title content__card__title-decoration content__card__title-inline">концентрацию</h2>
-      <h2 class="content__card__title content__card__title-decoration">внимания?</h2>
-      <div class="article-list-list article-list-list-position">
-        <article class="card">
+    <section class="content-section-what">
+      <h2 class="content__card__title content__card__title-what">Что снижает концентрацию внимания?</h2>
+      <ul class="article-list-position">
+        <li class="card cards-what">
           <h3 class="content-card-undertitle">Многозадачность</h3>
           <p class="content-card-text">Как концентрация может снижаться из-за… концентрации? Любая стрессовая ситуация
             (и
@@ -102,8 +98,8 @@
             давать ей
             отдохнуть.
           </p>
-        </article>
-        <article class="card">
+        </li>
+        <li class="card cards-what">
           <h3 class="content-card-undertitle">Еда</h3>
           <p class="content-card-text">«Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно доставляют в мозг
             энергию и помогают ему лучше работать.
@@ -111,8 +107,8 @@
             только
             действие «быстрых углеводов» заканчивается, мы чувствуем усталость и сонливость. И хотим ещё больше быстрых
             углеводов.</p>
-        </article>
-        <article class="card">
+        </li>
+        <li class="card cards-what">
           <h3 class="content-card-undertitle">Гаджеты</h3>
           <p class="content-card-text">Да-да, это та самая ситуация, когда на экране ноутбука — код, в наушниках —
             подкаст, а на компьютере фоном — ещё и видео
@@ -123,8 +119,8 @@
             больше
             времени
             мы проводим в гаджетах, тем больше времени затем нужно, чтобы вернуться к работе.</p>
-        </article>
-      </div>
+        </li>
+      </ul>
     </section>
     <section class="content-section section">
       <h2 class="content__card__title content__card__title-decor">Как&nbsp;концентрироваться лучше, чем золотая рыбка
@@ -134,7 +130,7 @@
       <div class="article-list article-list-advice">
         <h3 class="content-card-undertitle undertitle">5 простых (на самом деле не очень) советов</h3>
         <article class="card card-advice">
-          <h4 class="content-card-undertitle">Представьте небо и облака</h4>
+          <h4 class="content-card-undertitle title">Представьте небо и облака</h4>
           <p class="content-card-text">Или листья в ручье. Тут дело в лёгкой медитации, которая
             помогает успокоиться. Ведь
             часто именно тревожные мысли&nbsp;о сложных задачах как раз и мешают эти сложные задачи делать. В такие
@@ -149,7 +145,7 @@
             проблемах из будущего.</p>
         </article>
         <article class="card card-advice">
-          <h4 class="content-card-undertitle">Включите музыку</h4>
+          <h4 class="content-card-undertitle title">Включите музыку</h4>
           <p class="content-card-text">Но не любую, и не любимую. Любимая может быть связана с сильными положительными
             эмоциями, которые тоже очень сильно
             отвлекают. Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще попробовать включить плейлист с
@@ -158,7 +154,7 @@
             нейромузыкой.</p>
         </article>
         <article class="card card-advice">
-          <h4 class="content-card-undertitle">Прогуляйтесь</h4>
+          <h4 class="content-card-undertitle title">Прогуляйтесь</h4>
           <p class="content-card-text">Или даже пробегитесь. Лучше найти парк или лес: один
             эксперимент <a href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
               target="_blank">показал</a>
@@ -171,7 +167,7 @@
 
         </article>
         <article class="card card-advice">
-          <h4 class="content-card-undertitle">Хорошо ешьте</h4>
+          <h4 class="content-card-undertitle title">Хорошо ешьте</h4>
           <p class="content-card-text">Мы — не ваша бабушка, но это правда важно. Выбирайте
             продукты, которые препятствуют
             резким скачкам сахара в крови.
@@ -181,7 +177,7 @@
             цельнозерновой пшеницы.</p>
         </article>
         <article class="card card-advice">
-          <h4 class="content-card-undertitle">Читайте</h4>
+          <h4 class="content-card-undertitle title">Читайте</h4>
           <p class="content-card-text">Настоящие бумажные книги. Это правда помогает с
             концентрацией: чтобы прочитать пост
             в соцсети, достаточно нескольких
