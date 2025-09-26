@@ -79,7 +79,7 @@ html {
 }
 
 .header__title {
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 80%;
   color: var(--header-text-color);
@@ -101,7 +101,7 @@ html {
   font-size: 18px;
   font-weight: 700;
   color: var(--undertitle-color);
-  margin-block-end: 5px;
+  margin-block-end: 10px;
 }
 
 .header__text-paragraf {
@@ -157,13 +157,13 @@ article {
 
 .article-list {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: min-content min-content;
   align-items: center;
 }
 
 .article-list-advice {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: min-content min-content min-content min-content;
   margin-block-start: 20px;
 }
 
@@ -198,7 +198,7 @@ article {
 }
 
 .content-card-undertitle {
-  font-family: var(--main-font);
+  font-family: var(--main-font), monospace;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -207,7 +207,7 @@ article {
 }
 
 .content-card-text {
-  font-family: var(--main-font);
+  font-family: var(--main-font), monospace;
   font-size: 18px;
   font-weight: 400;
   color: var(--text-color);
@@ -239,7 +239,7 @@ article {
 }
 
 .section-gallery {
-  margin-block-start: 48px;
+  margin-block-start: 50px;
 }
 
 .gallery {
@@ -298,7 +298,7 @@ main {
 .footer__title {
   align-self: center;
   justify-self: center;
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 83%;
   color: var(--header-text-color);
@@ -316,10 +316,8 @@ main {
   }
 
   .article-list {
-    grid-template-rows: repeat(2, 1fr);
     grid-column-start: 2;
     grid-column-end: span3;
-    align-items: center;
   }
 
   .article-list-why {
@@ -330,10 +328,6 @@ main {
     display: grid;
     grid-template-rows: min-content;
     margin-block-start: 30px;
-  }
-
-  .decorated-zone::before {
-    bottom: 28px;
   }
 
   .decorated-zone::after {
@@ -370,13 +364,16 @@ main {
     font-weight: 400;
     color: var(--text-color);
     line-height: 23.4px;
-    letter-spacing: -0.004em;
     padding-top: 10px;
   }
 
   .content__card__title {
     display: block;
     max-width: 236px;
+  }
+
+  .content__card__title-decor {
+    margin-block-start: 31px;
   }
 
   .content__card__title-decoration {
@@ -406,7 +403,6 @@ main {
   }
 
   main {
-    margin-block-start: 60px;
     padding-inline-start: 0;
     padding-inline-end: 0;
   }
@@ -511,6 +507,7 @@ main {
     max-width: 491px;
     width: fit-content;
     display: block;
+    margin-block-end: 16px;
   }
 
   .header__theme-menu-decoration {
@@ -543,7 +540,8 @@ main {
 
   .article-list-position {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
     gap: 20px;
   }
 
@@ -562,22 +560,21 @@ main {
     padding-block-start: 0;
   }
 
-  .cards-what {
-    grid-row: 2;
-  }
-
-  .content__card__title-what {
-    width: 315px;
+  .card-advice {
+    margin-inline-start: 7px;
   }
 
   .content-section-what {
-    margin-block-start: 80px;
+    margin-block-start: 82px;
   }
 
   .content__card__title {
-    margin-inline-start: 1px;
     max-width: max-content;
     margin-block-start: 0;
+  }
+
+  .content__card__title-what {
+    max-width: 315px;
   }
 
   .content-card-undertitle {
