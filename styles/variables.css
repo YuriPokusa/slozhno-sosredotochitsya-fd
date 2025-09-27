@@ -3,9 +3,10 @@
   --page-bg-image: url(../images/cover-image-dark.png);
   --page-bg-color: #000028;
   --accent-color: #FF0070;
+  --title-color: #FF0070;
   --undertitle-color: #000028;
   --a-text-color: #F1B2CE;
-  --a-shadow-color: #F1B2CE;
+  --a-shadow-color: #FF0070;
   --text-color: #F1B2CE;
   --header-text-color: #DB00FF;
   --decorated-zone-color: #FF0070;
